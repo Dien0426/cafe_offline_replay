@@ -17,7 +17,7 @@ ana_cut=$2
 RunList="${targ}_${ana_cut}.txt"
 
 echo "RunList: ${RunList}"
-inputFile="/w/hallc-scshelf2102/c-cafe-2022/cyero/cafe_offline_replay/UTILS_CAFE/runlist/"
+inputFile="/w/hallc-scshelf2102/c-cafe-2022/dien/cafe_offline_replay/UTILS_CAFE/runlist/"
 
 if [[ -z "$1" ]]; then
     echo ""
@@ -76,7 +76,7 @@ echo "JOBNAME: cafe_${targ}_${ana_cut}" >> ${batch} ## Change to be more specifi
 echo "DISK_SPACE: 5 GB" >> ${batch}
 echo "MEMORY: 10000 MB" >> ${batch} 
 echo "CPU: 1" >> ${batch} ### hcana is single core, setting CPU higher will lower priority and gain you nothing!
-echo "COMMAND:/w/hallc-scshelf2102/c-cafe-2022/cyero/cafe_offline_replay/analyze_cafe_data.sh ${targ} ${ana_cut} ${MAXEVENTS}"  >> ${batch}
+echo "COMMAND:/w/hallc-scshelf2102/c-cafe-2022/dien/cafe_offline_replay/analyze_cafe_data.sh ${targ} ${ana_cut} ${MAXEVENTS}"  >> ${batch}
 # simulation script (will need to make alternate submittion script for simulation)
 #echo "COMMAND:/w/hallc-scshelf2102/c-cafe-2022/cyero/hallc_simulations/simulate.py" >> ${batch}
 echo "MAIL: ${USER}@jlab.org" >> ${batch}

@@ -225,8 +225,8 @@ c_heep_MM_max = 0.15
 
 # 4-Momentum Transfers [GeV^2]
 Q2_MF_cut_flag = 1
-c_MF_Q2_min = 1.8
-c_MF_Q2_max = 100.
+c_MF_Q2_min = 2.0
+c_MF_Q2_max = 2.2
 
 # Missing Momentum [GeV]
 Pm_MF_cut_flag = 1
@@ -256,8 +256,8 @@ c_MF_Em_max = 0.09
 
 # 4-Momentum Transfers [GeV^2]
 Q2_SRC_cut_flag = 1
-c_SRC_Q2_min = 1.8
-c_SRC_Q2_max = 100.
+c_SRC_Q2_min = 2.
+c_SRC_Q2_max = 2.2
 
 # Missing Momentum [GeV]
 Pm_SRC_cut_flag = 1
